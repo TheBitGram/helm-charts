@@ -1,0 +1,27 @@
+apiVersion: v1
+entries:
+  idsvr-config-params:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-12-03T05:33:16.00815484Z"
+    description: A Helm chart for creating a Secret with parameters for the Curity
+      Identity Server configuration
+    digest: b97a30754a5d9c2f783efd47b20ca6d53ca53e7c5a37c487637096de1e53eea7
+    name: idsvr-config-params
+    type: application
+    urls:
+    - https://github.com/TheBitGram/helm-charts/releases/download/idsvr-config-params-0.1.0/idsvr-config-params-0.1.0.tgz
+    version: 0.1.0
+  introspection-proxy:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-12-03T05:33:16.173902954Z"
+    description: A Helm chart for setting up a token introspection proxy across multiple
+      hosts
+    digest: aebd35d355359185fcb80494af690e890d899773a86be669a8f92f20d359ba6d
+    name: introspection-proxy
+    type: application
+    urls:
+    - https://github.com/TheBitGram/helm-charts/releases/download/introspection-proxy-0.1.0/introspection-proxy-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-12-03T05:33:16.173913055Z"
