@@ -1,0 +1,14 @@
+# Default values for introspection-proxy.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+fullnameOverride: ""
+nameOverride: ""
+
+namespace: ""
+
+proxy:
+  name: idsvr
+  introspectionHost: example.com
+  introspectionPath: /oauth/v2/example/path
+  hosts: []

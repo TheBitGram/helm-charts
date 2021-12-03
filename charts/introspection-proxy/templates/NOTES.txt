@@ -1,0 +1,4 @@
+Token introspection proxy {{ .Values.proxy.name }} is available for hosts:
+{{- range $host := .Values.proxy.hosts }}
+  {{ $host }}
+{{- end }}
