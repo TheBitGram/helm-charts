@@ -3,6 +3,16 @@ entries:
   application-secrets:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2021-12-10T07:17:38.185937056Z"
+    description: A Helm chart for creating Kubernetes secrets
+    digest: a8bbb9d948cba9a647b57be1f4cec343217b83d71ec722466e5e1c40e92698c2
+    name: application-secrets
+    type: application
+    urls:
+    - https://github.com/TheBitgram/helm-charts/releases/download/application-secrets-0.1.1/application-secrets-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2021-12-10T05:38:59.670656544Z"
     description: A Helm chart for creating Kubernetes secrets
     digest: 3199a008b656f5fc4845644ee95a8bf75204ddf8ea69066397ad594732961aad
@@ -35,4 +45,19 @@ entries:
     urls:
     - https://github.com/TheBitGram/helm-charts/releases/download/introspection-proxy-0.1.0/introspection-proxy-0.1.0.tgz
     version: 0.1.0
-generated: "2021-12-10T05:38:59.670662244Z"
+  standard-application:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2021-12-10T07:17:38.27705868Z"
+    description: A Helm chart for Kubernetes
+    digest: 346bcad0e5374b295e8bef136c844b627aa43f90963b2a79e4790574de64d260
+    home: https://github.com/ManagedKube/helm-charts
+    icon: https://github.com/ManagedKube/helm-charts
+    maintainers:
+    - email: info@managedkube.com
+      name: Garland
+    name: standard-application
+    urls:
+    - https://github.com/TheBitgram/helm-charts/releases/download/standard-application-1.0.12/standard-application-1.0.12.tgz
+    version: 1.0.12
+generated: "2021-12-10T07:17:38.277075381Z"
