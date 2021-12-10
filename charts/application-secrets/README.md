@@ -17,7 +17,7 @@ In the `helm_values.yaml` file, add this configuration for `env` inside `contain
         - name: <ENV_VAR_NAME_1>
           valueFrom: 
             secretKeyRef:
-              name: <external_secret_module_name>
+              name: ${fullnameOverride}
               key: <secret_name_1> # must match name from external secrets
         - name: <ENV_VAR_NAME_2>
           valueFrom: 
