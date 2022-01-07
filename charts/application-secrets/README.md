@@ -49,7 +49,7 @@ module "secrets" {
 }
 ```
 
-Make the deployment depend on the secrets module
+Make the App deployment depend on the secrets module
 ```
   depends_on = [
     module.secrets
