@@ -15,7 +15,7 @@ Set `local.secrets` in `main.tf` to the list of secrets you want injected as env
 locals {
   .
   .
-  secrets = ["SECRET_NAME_1", "SECRET_NAME_2]
+  secrets = ["SECRET_NAME_1", "SECRET_NAME_2"]
   .
   .
 }
