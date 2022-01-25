@@ -9,6 +9,8 @@ aws secretsmanager create-secret --name <SECRET_NAME> --secret-string "<secret_v
 ```
 And validate that it appears in the AWS console.
 
+SECRET_EXAMPLE-NUMBER-ONE in Secret Manager will map to a secret.exampleNumberOne env var
+
 ### Configuring a Secrets Deployment
 Set `local.secrets` in `main.tf` to the list of secrets you want injected as environment variables into the deployment
 ```
