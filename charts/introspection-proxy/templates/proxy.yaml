@@ -35,8 +35,14 @@ metadata:
     # See https://github.com/curityio/nginx_phantom_token_module for more info
     nginx.ingress.kubernetes.io/server-snippet: |
       location {{ .Values.proxy.name }} {
-        proxy_set_header Host {{ .Values.proxy.introspectionHost }};
-        proxy_pass https://{{ .Values.proxy.introspectionHost }}{{ .Values.proxy.introspectionPath }};
+        # use a variable to prevent only resolving the DNS once
+        # see http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_pass
+        set $idsvr_host "{{ .Values.proxy.introspectionHost }}";
+
+        proxy_set_header Host $idsvr_host;
+        proxy_pass https://$idsvr_host{{ .Values.proxy.introspectionPath }};
+        proxy_redirect off;
+        
         # proxy_cache_methods POST; 
         # proxy_cache api_cache; 
         # proxy_cache_key $request_body; 
