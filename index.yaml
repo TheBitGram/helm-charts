@@ -3,6 +3,16 @@ entries:
   application-secrets:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2022-01-27T23:46:50.330986281Z"
+    description: A Helm chart for creating Kubernetes secrets
+    digest: 103f55e0752f7cf3bcc88df3477b7eb63be9eb46a60b036b46af7b9d23199f70
+    name: application-secrets
+    type: application
+    urls:
+    - https://github.com/TheBitgram/helm-charts/releases/download/application-secrets-0.1.2/application-secrets-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2021-12-10T07:17:38.185937056Z"
     description: A Helm chart for creating Kubernetes secrets
     digest: a8bbb9d948cba9a647b57be1f4cec343217b83d71ec722466e5e1c40e92698c2
@@ -36,6 +46,17 @@ entries:
   introspection-proxy:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2022-01-27T23:46:50.480600421Z"
+    description: A Helm chart for setting up a token introspection proxy across multiple
+      hosts
+    digest: f683403e41bb051036fea22c772b701c5fb889e58b77f06b9dfbb9e68d69512c
+    name: introspection-proxy
+    type: application
+    urls:
+    - https://github.com/TheBitgram/helm-charts/releases/download/introspection-proxy-0.1.1/introspection-proxy-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2021-12-03T05:33:16.173902954Z"
     description: A Helm chart for setting up a token introspection proxy across multiple
       hosts
@@ -60,4 +81,4 @@ entries:
     urls:
     - https://github.com/TheBitgram/helm-charts/releases/download/standard-application-1.0.12/standard-application-1.0.12.tgz
     version: 1.0.12
-generated: "2021-12-10T07:17:38.277075381Z"
+generated: "2022-01-27T23:46:50.480619121Z"
