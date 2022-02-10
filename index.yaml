@@ -31,6 +31,26 @@ entries:
     urls:
     - https://github.com/TheBitgram/helm-charts/releases/download/application-secrets-0.1.0/application-secrets-0.1.0.tgz
     version: 0.1.0
+  idsvr:
+  - apiVersion: v1
+    appVersion: 6.7.3
+    created: "2022-02-10T19:22:38.068666048Z"
+    description: A Helm chart for Curity Identity Server
+    digest: 53759381063f2948bd1a740b964dc2d9e5ffa78a43661297b5ab79cc69d4a3ed
+    home: https://curity.io
+    icon: https://curity.io/assets/images/curity-logo-landscape.svg
+    keywords:
+    - iam
+    - oauth
+    - openid connect
+    - ldap
+    - sso
+    - saml
+    - scim
+    name: idsvr
+    urls:
+    - https://github.com/TheBitgram/helm-charts/releases/download/idsvr-0.0.1/idsvr-0.0.1.tgz
+    version: 0.0.1
   idsvr-config-params:
   - apiVersion: v2
     appVersion: 1.16.0
@@ -81,4 +101,4 @@ entries:
     urls:
     - https://github.com/TheBitgram/helm-charts/releases/download/standard-application-1.0.12/standard-application-1.0.12.tgz
     version: 1.0.12
-generated: "2022-01-27T23:46:50.480619121Z"
+generated: "2022-02-10T19:22:38.068684247Z"
