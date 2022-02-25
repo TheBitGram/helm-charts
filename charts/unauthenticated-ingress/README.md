@@ -1,4 +1,4 @@
-standard-application
+unauthenticated-ingress
 ====================
 A Helm chart for Kubernetes
 
@@ -6,7 +6,7 @@ Current chart version is `1.0.7`
 
 Source code can be found [here](https://github.com/ManagedKube/helm-charts)
 
-This `standard-application` Helm Chart can cover most needs for when you want to deploy your web application container to Kubernetes.  Instead of writing your own custom Helm Chart you can use this or use this as a starting point.
+This `unauthenticated-ingress` Helm Chart can cover most needs for when you want to deploy your web application container to Kubernetes.  Instead of writing your own custom Helm Chart you can use this or use this as a starting point.
 
 This chart will create these Kubernetes resources:
 * Deployment
