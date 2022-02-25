@@ -180,6 +180,20 @@ entries:
   unauthenticated-ingress:
   - apiVersion: v1
     appVersion: "1.0"
+    created: "2022-02-25T22:37:32.205773393Z"
+    description: A Helm chart for Kubernetes
+    digest: bc583d1ff0d98e693fe287c2067aecc01addfed18c1fa093d2ac21270a1d5245
+    home: https://github.com/TheBitgram/helm-charts
+    icon: https://github.com/TheBitgram/helm-charts
+    maintainers:
+    - email: info@managedkube.com
+      name: C
+    name: unauthenticated-ingress
+    urls:
+    - https://github.com/TheBitgram/helm-charts/releases/download/unauthenticated-ingress-0.0.3/unauthenticated-ingress-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v1
+    appVersion: "1.0"
     created: "2022-02-25T22:23:14.256207075Z"
     description: A Helm chart for Kubernetes
     digest: f69b77751d1c80d15e527e16e26969b3671d6991c514997ef7771411977e502d
@@ -206,4 +220,4 @@ entries:
     urls:
     - https://github.com/TheBitgram/helm-charts/releases/download/unauthenticated-ingress-0.0.1/unauthenticated-ingress-0.0.1.tgz
     version: 0.0.1
-generated: "2022-02-25T22:23:14.256371573Z"
+generated: "2022-02-25T22:37:32.206009693Z"
