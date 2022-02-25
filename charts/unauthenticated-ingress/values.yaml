@@ -2,6 +2,7 @@
 
 nameOverride: ""
 fullnameOverride: ""
+serviceName: ""
 
 #
 # Ingress variables
