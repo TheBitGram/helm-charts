@@ -1,18 +1,7 @@
-# Default values for standard-application.
-
-#
-# ReplicaCount denotes how many pods you want
-#
-replicaCount: 1
+# Default values for unauthenticated-ingress.
 
 nameOverride: ""
 fullnameOverride: ""
-
-# namespace: "default"
-
-labels: {}
-  # app: api-xxx
-  # foo: bar
 
 #
 # Ingress variables

@@ -62,55 +62,9 @@ helm repo add managedkube https://helm-charts.managedkube.com
 helm repo update
 ```
 
-
 ## Configuration
 
 The following table lists the configurable parameters of the chart and the default values.
-
-## Chart Values
-
-| Key | Type | Default | Description |
-|-----|------|---------|-------------|
-| deployment.affinity | object | `{}` |  |
-| deployment.containerSpecOptions | object | `{}` |  |
-| deployment.containers[0].args | list | `[]` |  |
-| deployment.containers[0].command | list | `[]` |  |
-| deployment.containers[0].env.base | list | `[]` |  |
-| deployment.containers[0].env.perEnv | list | `[]` |  |
-| deployment.containers[0].envFrom | list | `[]` |  |
-| deployment.containers[0].image.pullPolicy | string | `"IfNotPresent"` |  |
-| deployment.containers[0].image.repository | string | `"gcr.io/google_containers/echoserver"` |  |
-| deployment.containers[0].image.tag | string | `"1.10"` |  |
-| deployment.containers[0].livenessProbe | object | `{}` |  |
-| deployment.containers[0].name | string | `"container-name"` |  |
-| deployment.containers[0].ports | list | `[]` |  |
-| deployment.containers[0].readinessProbe | object | `{}` |  |
-| deployment.containers[0].resources | object | `{}` |  |
-| deployment.containers[0].volumeMounts | list | `[]` |  |
-| deployment.imagePullSecrets | list | `[]` |  |
-| deployment.nodeSelector | object | `{}` |  |
-| deployment.strategy | object | `{}` |  |
-| deployment.tolerations | list | `[]` |  |
-| fullnameOverride | string | `""` |  |
-| hpa.enabled | bool | `false` |  |
-| hpa.spec.maxReplicas | int | `10` |  |
-| hpa.spec.minReplicas | int | `1` |  |
-| hpa.spec.scaleTargetRef.apiVersion | string | `"apps/v1"` |  |
-| hpa.spec.scaleTargetRef.kind | string | `"Deployment"` |  |
-| hpa.spec.scaleTargetRef.name | string | `"standard-application"` |  |
-| hpa.spec.targetCPUUtilizationPercentage | int | `50` |  |
-| ingress.annotations | object | `{}` |  |
-| ingress.enabled | bool | `false` |  |
-| ingress.hosts[0] | string | `"chart-example.local"` |  |
-| ingress.paths | list | `[]` |  |
-| ingress.tls | list | `[]` |  |
-| labels | object | `{}` |  |
-| nameOverride | string | `""` |  |
-| replicaCount | int | `1` |  |
-| service.port | int | `80` |  |
-| service.type | string | `"ClusterIP"` |  |
-| servicemonitor.enabled | bool | `false` |  |
-| volumes | list | `[]` |  |
 
 ## Local Helm Testing
 

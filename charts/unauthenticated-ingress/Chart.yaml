@@ -3,8 +3,8 @@ appVersion: "1.0"
 description: A Helm chart for Kubernetes
 name: unauthenticated-ingress
 version: 1.0.12
-home: https://github.com/ManagedKube/helm-charts
-icon: https://github.com/ManagedKube/helm-charts
+home: https://github.com/TheBitgram/helm-charts
+icon: https://github.com/TheBitgram/helm-charts
 maintainers:
-  - name: Garland
+  - name: C
     email: info@managedkube.com
