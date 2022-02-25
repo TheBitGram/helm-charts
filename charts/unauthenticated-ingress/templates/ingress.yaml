@@ -1,6 +1,7 @@
 {{- if .Values.ingress.enabled -}}
 {{- $fullName := include "unauthenticated-ingress.fullname" . -}}
 {{- $ingressPaths := .Values.ingress.paths -}}
+{{- $serviceName := .Values.serviceName -}}
 
 apiVersion: extensions/v1beta1
 kind: Ingress
@@ -37,7 +38,7 @@ spec:
 	{{- range $ingressPaths }}
           - path: {{ .path }}
             backend:
-              serviceName: {{ .Values.serviceName | quote }}
+              serviceName: {{ $serviceName }}
               servicePort: {{ .servicePort }}
 	{{- end }}
   {{- end }}
