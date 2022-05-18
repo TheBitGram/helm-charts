@@ -162,6 +162,17 @@ entries:
     urls:
     - https://github.com/TheBitGram/helm-charts/releases/download/introspection-proxy-0.1.0/introspection-proxy-0.1.0.tgz
     version: 0.1.0
+  node-local-dns:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-05-18T22:11:30.854903585Z"
+    description: A Helm chart for setting up the NodeLocal DNS Cache
+    digest: 5eb816cba7773ab3b9109f01d71e96c71136dde34bd89045395c57ef841a5158
+    name: node-local-dns
+    type: application
+    urls:
+    - https://github.com/TheBitgram/helm-charts/releases/download/node-local-dns-0.1.0/node-local-dns-0.1.0.tgz
+    version: 0.1.0
   standard-application:
   - apiVersion: v1
     appVersion: "1.0"
@@ -234,4 +245,4 @@ entries:
     urls:
     - https://github.com/TheBitgram/helm-charts/releases/download/unauthenticated-ingress-0.0.1/unauthenticated-ingress-0.0.1.tgz
     version: 0.0.1
-generated: "2022-02-25T22:54:05.059856594Z"
+generated: "2022-05-18T22:11:30.854931486Z"
