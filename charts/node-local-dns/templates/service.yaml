@@ -1,0 +1,20 @@
+# A headless service is a service with a service IP but instead of load-balancing it will return the IPs of our associated Pods.
+# We use this to expose metrics to Prometheus.
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "node-local-dns.fullname" . }}
+  namespace: {{ .Values.namespace }}
+  annotations:
+    prometheus.io/scrape: {{ .Values.metrics.prometheusScrape | quote }}
+    prometheus.io/port: {{ .Values.metrics.port | quote }}    
+  labels:
+    {{- include "node-local-dns.labels" . | nindent 4 }}
+spec:
+  clusterIP: None
+  ports:
+    - name: metrics
+      port: {{ .Values.metrics.port }}
+      targetPort: {{ .Values.metrics.port }}
+  selector:
+    {{- include "node-local-dns.selectorLabels" . | nindent 4 }}
