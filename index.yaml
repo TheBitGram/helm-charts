@@ -31,6 +31,18 @@ entries:
     urls:
     - https://github.com/TheBitgram/helm-charts/releases/download/application-secrets-0.1.0/application-secrets-0.1.0.tgz
     version: 0.1.0
+  external-secrets:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-09-23T18:22:10.228036346Z"
+    description: A Helm chart for setting up External Secrets for External Secrets
+      Operator
+    digest: 0990d6bc287724d08c30a26f60bd22ba92978fdd01d390a275d8cea76465fde4
+    name: external-secrets
+    type: application
+    urls:
+    - https://github.com/TheBitgram/helm-charts/releases/download/external-secrets-0.1.0/external-secrets-0.1.0.tgz
+    version: 0.1.0
   idsvr:
   - apiVersion: v1
     appVersion: 6.7.3
@@ -259,4 +271,4 @@ entries:
     urls:
     - https://github.com/TheBitgram/helm-charts/releases/download/unauthenticated-ingress-0.0.1/unauthenticated-ingress-0.0.1.tgz
     version: 0.0.1
-generated: "2022-05-19T21:52:21.071678973Z"
+generated: "2022-09-23T18:22:10.228146245Z"
