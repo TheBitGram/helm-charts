@@ -201,8 +201,11 @@ Now you can reference the AWS secret as an environment variable inside the deplo
 
 We have observed issues with deseriailzing the secret value from they keypair. If this occurs, take the following steps:
 
-1. Create a new secret in AWS of type "Other" and paste only the value. It should appear as in the example below. Name this secret <secret-name>\_RAW
-2. Update the `secret_helm_values.yaml` file to add the line `useRaw: true`.
-3. Update the `main.tf` file to use version "0.6.0"
+1. Create a new secret in AWS of type "Other" and paste only the value. It should appear as in the example below. Name this secret `<secret-name>_RAW`
+<img src=https://user-images.githubusercontent.com/93568025/224831236-8a4705fa-8e1c-4385-8439-6e9f64845b26.png width=600 />
+<img src=https://user-images.githubusercontent.com/93568025/224831776-e47e952d-d3f7-4261-8cad-4148cb059a7e.png width=600 />
 
-**Note: Secrets will be injected as SECRET_ONE and should be saved in AWS as SECRET_ONE_RAW**
+2. Update the `secret_helm_values.yaml` file to add the line `useRaw: true`.
+3. Update the secrets module in `main.tf` file to use version `"0.6.0"`
+
+**Note: Secrets will be injected as MY_SECRET_NAME and should be saved in AWS as MY_SECRET_NAME_RAW**
