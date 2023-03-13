@@ -125,7 +125,7 @@ module "secrets" {
   # This is what you want to name the chart when deploying
   user_chart_name = "${local.fullnameOverride}-secrets"
   # The helm chart version you want to use
-  helm_version = "0.1.0"
+  helm_version = "0.3.0"
   # The namespace you want to install the chart into - it will create the namespace if it doesnt exist
   namespace = local.namespace
   # The helm chart values file
@@ -169,3 +169,11 @@ In the `helm_values.yaml` file, add this configuration for `envFrom` inside `con
 ```
 
 Now you can reference the AWS secret as an environment variable inside the deployment.
+
+
+### Failure to deserialize JSON values
+We have observed issues with deseriailzing the secret value from they keypair. If this occurs, take the following steps:
+
+1. Create a new secret in AWS of type "Other" and paste only the value. It should appear as in the example below. Name this secret <secret-name>_RAW
+2. Update the `secret_helm_values.yaml` file to add the line `useRaw: true`.
+3. Update the `main.tf` file to use version "0.3.0"
