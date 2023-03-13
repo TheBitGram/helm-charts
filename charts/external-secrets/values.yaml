@@ -2,4 +2,4 @@ fullnameOverride: ""
 
 namespace: ""
 
-rawSecrets: []
+secrets: []

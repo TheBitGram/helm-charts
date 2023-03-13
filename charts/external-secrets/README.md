@@ -148,7 +148,7 @@ module "secrets" {
   # This is what you want to name the chart when deploying
   user_chart_name = "${local.fullnameOverride}-secrets"
   # The helm chart version you want to use
-  helm_version = "0.4.0"
+  helm_version = "0.6.0"
   # The namespace you want to install the chart into - it will create the namespace if it doesnt exist
   namespace = local.namespace
   # The helm chart values file
@@ -203,4 +203,6 @@ We have observed issues with deseriailzing the secret value from they keypair. I
 
 1. Create a new secret in AWS of type "Other" and paste only the value. It should appear as in the example below. Name this secret <secret-name>\_RAW
 2. Update the `secret_helm_values.yaml` file to add the line `useRaw: true`.
-3. Update the `main.tf` file to use version "0.4.0"
+3. Update the `main.tf` file to use version "0.6.0"
+
+**Note: Secrets will be injected as SECRET_ONE and should be saved in AWS as SECRET_ONE_RAW**
